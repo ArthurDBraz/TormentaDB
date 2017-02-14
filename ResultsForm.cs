@@ -40,7 +40,8 @@ namespace TormentaDB
             if (reader.HasRows) while (reader.Read())
                 {
                     resultsHtml +=
-                        "<p><font size=5>" + reader[0] + "</font></p>" +
+                        // TODO Implement Show/Hide Button
+                        "<p><font size=5>" + reader[0] + "</font></p>" + // Nome
                         "<p>" + ((!String.IsNullOrEmpty(reader[1].ToString())) ? "arcana " + reader[1] + " " : "") +
                         ((!String.IsNullOrEmpty(reader[2].ToString())) ? "divina " + reader[2] : "") + "<br>" +
                         reader[3] + "</p>" +
